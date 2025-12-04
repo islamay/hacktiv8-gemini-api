@@ -2,8 +2,8 @@ import "dotenv/config"
 import multer from "multer"
 import express from "express"
 import { GoogleGenAI, } from "@google/genai"
-import { app } from "./app.js"
 
+const app = express()
 const upload = multer()
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY })
 
